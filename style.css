@@ -31,12 +31,16 @@
   transform: rotatey(calc(var(--i)*var(--ba))) translatez(calc(-1*(.5*var(--w) + .5em)/tan(.5*var(--ba))));
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .a3d {
-    animation-duration: 128s;
+@media (max-width: 600px) {
+  .card {
+    --w: 10em; /* Reducimos el tamaño de las fotos en el cel */
   }
+  
+  .scene {
+    perspective: 25em; /* Ajustamos la perspectiva para que se vea bien */
+    margin-bottom: 100px; /* Menos margen en el celular */
 }
-
+}
 
 html {
   height: 100%;
@@ -220,4 +224,24 @@ body {
   opacity: 0;
   visibility: hidden; /* Asegura que no se pueda hacer clic ni ver */
   pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .titulo-fijo {
+    font-size: 1.8rem !important; /* Título más pequeño */
+    top: 10px;
+  }
+
+  .text-msg {
+    font-size: 1.5rem !important; /* Mensajes animados más pequeños */
+  }
+
+  .start-btn {
+    font-size: 1.2rem; /* Botón de inicio ajustable */
+    padding: 15px 25px;
+  }
+  
+  .valentine-footer img {
+    width: 250px; /* El corazón de abajo más pequeño */
+  }
 }

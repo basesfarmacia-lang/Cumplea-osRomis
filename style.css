@@ -245,3 +245,29 @@ body {
     width: 250px; /* El corazón de abajo más pequeño */
   }
 }
+/* --- SOLO PARA QUE SE AJUSTE AL CELULAR --- */
+@media (max-width: 600px) {
+  /* 1. Hacemos las fotos un poco más pequeñas para que quepan en el ancho del cel */
+  .card {
+    --w: 10em; 
+    /* 2. Recalculamos la posición para que el círculo de fotos sea más compacto */
+    transform: rotatey(calc(var(--i)*var(--ba))) 
+               translatez(calc(-1*(.5*var(--w) + 1em)/tan(.5*var(--ba)))) !important;
+  }
+
+  /* 3. Ajustamos el tamaño de las letras para que no se amontonen */
+  .titulo-fijo {
+    font-size: 2rem !important;
+    top: 20px !important;
+  }
+
+  .text-msg {
+    font-size: 1.5rem !important;
+  }
+
+  /* 4. Bajamos un poco el carrusel para que no tape los mensajes */
+  .scene {
+    perspective: 25em;
+    margin-top: 20px;
+  }
+}

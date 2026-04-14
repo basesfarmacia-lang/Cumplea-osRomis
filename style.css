@@ -89,7 +89,6 @@ body {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,;
   font-size: 5rem; 
   color: #ffffff;
-  -webkit-text-stroke: 1.5px black;
   text-shadow:(0 0 5px #ffffff,0 0 10px #ffffff,0 0 20px #ffffff,0 0 30px #ff00de);
   opacity: 0;
   animation: fadeText 18s infinite;

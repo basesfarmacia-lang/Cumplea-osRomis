@@ -248,7 +248,7 @@ body {
 @media (max-width: 600px) {
   /* 1. Hacemos las fotos un poco más pequeñas para que quepan en el ancho del cel */
   .card {
-    --w: 15em; 
+    --w: 25em; 
     /* 2. Recalculamos la posición para que el círculo de fotos sea más compacto */
     transform: rotatey(calc(var(--i)*var(--ba))) 
                translatez(calc(-1*(.5*var(--w) + 1em)/tan(.5*var(--ba)))) !important;

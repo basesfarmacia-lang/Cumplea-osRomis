@@ -21,7 +21,7 @@
   Tu navegador no soporta el audio.
 </audio>
   <body>
-      <h1 class="titulo-fijo">Cumpleaños Romina-Romis</h1>
+      <h1 class="titulo-fijo">Cumpleaños Romis-Rumacas</h1>
     <div class="valentine-header">
       <div class="valentine-text-container">
         <span class="text-msg">Mi Familia Los Amo ❤️</span>
@@ -29,27 +29,103 @@
         <span class="text-msg">Hoy quiero Invitarlos al Cedral ✨</span>
         <span class="text-msg">Festejaremos Mi Cumpleaños 🥳</span>
         <span class="text-msg">Siiiiiii ya cumpli 1 AÑO 🥹</span>
-        <span class="text-msg">Iremos el Domingo 19 a las 11 🤩</span>
+        <span class="text-msg">Iremos el Sabado A las 11 🤩</span>
         <span class="text-msg">Por favor NO Falten Los TQM🥰</span>
-        <span class="text-msg">Atentamente la Romis😝</span>
+        <span class="text-msg">Atentamente la Rumacas 😝</span>
         <span class="text-msg">P.D. Si no llevan Regalo NO Entran jiji 😝</span>
         </div>
     </div>
 
     <div class="scene">
       <div class="a3d" style="--n: 12">
-        <img class="card" src="./assets/1.jpeg" style="--i: 0" alt="img"/>
+        <img class="card" src="./assets/1.jpg" style="--i: 0" alt="img"/>
         <img class="card" src="./assets/2.jpeg" style="--i: 1" alt="img"/>
-        <img class="card" src="./assets/3.jpeg" style="--i: 2" alt="img"/>
-        <img class="card" src="./assets/4.jpeg" style="--i: 3" alt="img"/>
-        <img class="card" src="./assets/5.jpeg" style="--i: 4" alt="img"/>
+        <img class="card" src="./assets/3.png" style="--i: 2" alt="img"/>
+        <img class="card" src="./assets/4.png" style="--i: 3" alt="img"/>
+        <img class="card" src="./assets/5.png" style="--i: 4" alt="img"/>
         <img class="card" src="./assets/6.jpeg" style="--i: 5" alt="img"/>
         <img class="card" src="./assets/7.jpeg" style="--i: 6" alt="img"/>
-        <img class="card" src="./assets/8.jpeg" style="--i: 7" alt="img"/>
+        <img class="card" src="./assets/8.png" style="--i: 7" alt="img"/>
         <img class="card" src="./assets/9.jpeg" style="--i: 8" alt="img"/>
-        <img class="card" src="./assets/10.jpeg" style="--i: 9" alt="img"/>
-        <img class="card" src="./assets/11.jpeg" style="--i: 10" alt="img"/>
-        <img class="card" src="./assets/12.jpeg" style="--i: 11" alt="img"/>
+        <img class="card" src="./assets/10.png" style="--i: 9" alt="img"/>
+        <img class="card" src="./assets/11.png" style="--i: 10" alt="img"/>
+        <img class="card" src="./assets/12.png" style="--i: 11" alt="img"/>
+      </div>
+    </div>
+
+    <div class="valentine-footer">
+      <img src="./assets/fondo.png" alt="Corazón">
+    </div>
+    <script>
+  const overlay = document.getElementById('overlay');
+  const startBtn = document.getElementById('start-btn');
+  const musica = document.getElementById('musica');
+
+  startBtn.addEventListener('click', () => {
+    // 1. Reproducir la música
+    musica.play().catch(error => console.log("Error al reproducir:", error));
+    
+    // 2. Ocultar la pantalla de bienvenida
+    overlay.classList.add('hidden');
+    
+    // 3. (Opcional) Si quieres que la música empiece con menos volumen
+    musica.volume = 0.5;
+  });
+</script>
+  </body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cumpleaños Romis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <div id="overlay" class="overlay">
+  <h2 class="titulo-fijo" style="position: relative; top: auto; margin-bottom: 30px; font-size: 2.5rem;">
+    ¡Romina Estuvo Aqui😂🐾!
+  </h2>
+  
+  <button id="start-btn" class="start-btn">🐾Toca Aqui🐾</button>
+</div>
+  
+
+<audio id="musica" loop>
+  <source src="happy.mpeg" type="audio/mpeg">
+  Tu navegador no soporta el audio.
+</audio>
+  <body>
+      <h1 class="titulo-fijo">Cumpleaños Romis-Rumacas</h1>
+    <div class="valentine-header">
+      <div class="valentine-text-container">
+        <span class="text-msg">Mi Familia Los Amo ❤️</span>
+        <span class="text-msg">Gracias por Darme un Hogar 😍</span>
+        <span class="text-msg">Hoy quiero Invitarlos al Cedral ✨</span>
+        <span class="text-msg">Festejaremos Mi Cumpleaños 🥳</span>
+        <span class="text-msg">Siiiiiii ya cumpli 1 AÑO 🥹</span>
+        <span class="text-msg">Iremos el Sabado A las 11 🤩</span>
+        <span class="text-msg">Por favor NO Falten Los TQM🥰</span>
+        <span class="text-msg">Atentamente la Rumacas 😝</span>
+        <span class="text-msg">P.D. Si no llevan Regalo NO Entran jiji 😝</span>
+        </div>
+    </div>
+
+    <div class="scene">
+      <div class="a3d" style="--n: 12">
+        <img class="card" src="./assets/1.jpg" style="--i: 0" alt="img"/>
+        <img class="card" src="./assets/2.jpeg" style="--i: 1" alt="img"/>
+        <img class="card" src="./assets/3.png" style="--i: 2" alt="img"/>
+        <img class="card" src="./assets/4.png" style="--i: 3" alt="img"/>
+        <img class="card" src="./assets/5.png" style="--i: 4" alt="img"/>
+        <img class="card" src="./assets/6.jpeg" style="--i: 5" alt="img"/>
+        <img class="card" src="./assets/7.jpeg" style="--i: 6" alt="img"/>
+        <img class="card" src="./assets/8.png" style="--i: 7" alt="img"/>
+        <img class="card" src="./assets/9.jpeg" style="--i: 8" alt="img"/>
+        <img class="card" src="./assets/10.png" style="--i: 9" alt="img"/>
+        <img class="card" src="./assets/11.png" style="--i: 10" alt="img"/>
+        <img class="card" src="./assets/12.png" style="--i: 11" alt="img"/>
       </div>
     </div>
 
